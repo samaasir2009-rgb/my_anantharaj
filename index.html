@@ -1,78 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="sam logo.png">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAMAASIR | Modern Portfolio</title>
+    <meta
+      name="description"
+      content="Modern portfolio of SAMAASIR — a creative developer who designs bold, user-focused digital experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="sam logo.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#home" class="brand" aria-label="SAMAASIR home">
+          <img src="sam logo.png" alt="SAMAASIR logo" class="brand-logo" />
+          <span class="brand-name">SAMAASIR</span>
+        </a>
 
-<header>
-    <nav>
-        <div class="brand">
-            <img src="sam logo.png" alt="SAMAASIR logo" class="brand-logo">
-            <h2 class="brand-name">SAMAASIR</h2>
-        </div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main>
-    <section id="home" class="section home">
-        <img src="sam logo.png" alt="SAMAASIR portfolio logo" class="hero-logo">
-        <h1>Hello, I'm <span>SAMAASIR</span></h1>
-        <p>A Creative Web Developer</p>
-        <button onclick="scrollToSection('contact')">Hire Me</button>
-    </section>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Creative Web Developer</p>
+            <h1>
+              I craft <span>modern</span> digital experiences that feel
+              premium.
+            </h1>
+            <p class="intro">
+              I’m SAMAASIR — a developer focused on building clean, memorable,
+              and conversion-driven websites for ambitious brands and ideas.
+            </p>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I am a passionate developer who loves creating beautiful and functional websites, and I have done some freelancing.</p>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skill-box">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-            <div>Python</div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="card feature-card">
-                <h3>FAIRY QUEEN INCOME PORTAL</h3>
-                <p>My current project is a modern income and user portal designed for digital earnings, dashboard access, and business management and AI Itegreted Business managment.</p>
+            <div class="hero-actions">
+              <button class="primary-btn" onclick="scrollToSection('contact')">
+                Hire Me
+              </button>
+              <a class="secondary-btn" href="#projects">View Work</a>
             </div>
+
+            <ul class="hero-meta" aria-label="Professional highlights">
+              <li>Available for freelance projects</li>
+              <li>UI-focused front-end builds</li>
+              <li>Fast, responsive, and polished</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Brand logo panel">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="portrait-card">
+              <img src="sam logo.png" alt="SAMAASIR brand logo" class="portrait" />
+            </div>
+            <div class="floating-tag tag-top">
+              <span>Design + Code</span>
+            </div>
+            <div class="floating-tag tag-bottom">
+              <strong>1+</strong>
+              <span>Years crafting digital experiences</span>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-</main>
+      <section class="stats container" aria-label="Key stats">
+        <article class="stat-card">
+          <span class="stat-number">01+</span>
+          <span class="stat-label">Projects completed</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number">01+</span>
+          <span class="stat-label">Years experience</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Custom-focused work</span>
+        </article>
+      </section>
 
-<footer>
-    <p>© 2026 SAMAASIR | All Rights Reserved</p>
-</footer>
+      <section id="about" class="section about">
+        <div class="container about-grid">
+          <div class="about-visual">
+            <div class="frame-wrap">
+              <img src="sam logo.png" alt="SAMAASIR logo" class="about-portrait" />
+            </div>
+          </div>
 
-<script src="data.js"></script>
-</body>
+          <div class="about-copy">
+            <p class="section-tag">About</p>
+            <h2>Designing clean interfaces with personality.</h2>
+            <p>
+              I’m a creative front-end developer who blends aesthetics and usability to
+              create digital experiences people genuinely enjoy using. My work focuses on
+              modern layouts, crisp interaction design, and strong visual storytelling.
+            </p>
+            <p>
+              From concept to launch, I build interfaces that feel thoughtful, responsive,
+              and intentional — whether it’s a portfolio, product landing page, or business portal.
+            </p>
+
+            <div class="about-points">
+              <div>
+                <strong>01</strong>
+                <span>Brand-aware design direction</span>
+              </div>
+              <div>
+                <strong>02</strong>
+                <span>Clean code and responsive layouts</span>
+              </div>
+              <div>
+                <strong>03</strong>
+                <span>Focused on conversion and clarity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">Work</p>
+            <h2>Selected projects.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card featured">
+              <span class="project-type">Featured</span>
+              <h3>Fairy Queen Income Portal</h3>
+              <p>
+                A modern business and income portal designed to simplify user onboarding,
+                dashboard access, and digital operations with a polished executive feel.
+              </p>
+              <ul>
+                <li>Dashboard UX</li>
+                <li>Modern user flow</li>
+                <li>Business platform design</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <span class="project-type">Portfolio</span>
+              <h3>Creative Brand Presentation</h3>
+              <p>
+                A visually rich concept focused on premium storytelling and elegant layout hierarchy.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <span class="project-type">Product</span>
+              <h3>Modern Landing Page System</h3>
+              <p>
+                Conversion-focused webpage design with a strong visual rhythm and polished interaction patterns.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="container">
+          <div class="section-header center">
+            <p class="section-tag">Skills</p>
+            <h2>Tools I work with.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-item"><span>HTML5</span></div>
+            <div class="skill-item"><span>CSS3</span></div>
+            <div class="skill-item"><span>JavaScript</span></div>
+            <div class="skill-item"><span>Responsive Design</span></div>
+            <div class="skill-item"><span>UI Design</span></div>
+            <div class="skill-item"><span>Python</span></div>
+            <div class="skill-item"><span>Creative Strategy</span></div>
+            <div class="skill-item"><span>Portfolio Design</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote-block">
+        <div class="container quote-wrap">
+          <p>
+            “I focus on creating digital experiences that are both stylish and strategic —
+            built to look premium and communicate clearly.”
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="section-tag">Contact</p>
+            <h2>Let’s build something memorable.</h2>
+            <p>
+              If you need a portfolio, landing page, business portal, or a polished website
+              with a modern edge, I’d love to hear about it.
+            </p>
+            <a href="mailto:samaasir.2009@gmail.com">samaasir.2009@gmail.com</a>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <label>
+              <span>Name</span>
+              <input type="text" id="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" id="email" placeholder="Your email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea id="message" placeholder="Tell me about your project" required></textarea>
+            </label>
+            <button type="submit" class="primary-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 SAMAASIR</p>
+        <p>Made with intention.</p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+  </body>
 </html>
+
