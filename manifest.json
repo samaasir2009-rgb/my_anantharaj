@@ -2,13 +2,14 @@
     "name": "Sam's Developer Portfolio",
     "short_name": "Sam Portfolio",
     "description": "My Software Developer Project",
-    "start_url": "/index.html",
+    "start_url": "./",
+    "scope": "./",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#111827",
     "icons": [
         {
-            "src": "/sam logo.png",
+            "src": "./sam logo.png",
             "sizes": "192x192",
             "type": "image/png"
         },
