@@ -26,3 +26,6 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./service-worker.js");
+}
