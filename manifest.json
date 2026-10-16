@@ -9,12 +9,12 @@
     "theme_color": "#111827",
     "icons": [
         {
-            "src": "./sam logo.png",
+            "src": "./icon-192x192.jpg",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/sam logo.png",
+            "src": "./sam logo.png",
             "sizes": "512x512",
             "type": "image/png"
         }
