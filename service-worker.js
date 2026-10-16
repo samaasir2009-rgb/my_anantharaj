@@ -3,7 +3,8 @@ const FILES=[
     "/",
     "/index.html",
     "/style.css",
-    "/data.js"
+    "/data.js",
+    "/sam logo.png"
     ];
     self.addEventListener("install", (event) => {
         event.waitUntil(
